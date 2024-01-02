@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/color_wild.png" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <title>Card Game</title>
+</head>
+
+<body>
+    
+    <div id="game">
+        <div>
+            <button type="button" id="start">
+                <img src="/images/color_wild.png"> Iniciar
+            </button>
+            <div id="information">Esperando jogadores online...</div>
+        </div>
+        <div id="cards">
+            <p class="rules">
+                Quando 2 jogadores estiverem online, eles poderão escolher até 12 cartas. Ganha aquele que não ultrapassar 21 na contagem dos valores das cartas
+            </p>            
+        </div>
+        <div id="my-cards"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/game.js"></script>
+
+</body>
+
+</html>
